@@ -53,7 +53,7 @@ double h = (b - a) / n;
 double sum = 0;
 for (int i = 1; i <= n; i++)
 {
-    double xi = a + i * h - h / 2;
+    double xi = a + i * (h / 2);
     sum += Function(xi);
 }
 double integral = h * sum;
