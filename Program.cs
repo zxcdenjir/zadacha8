@@ -56,7 +56,7 @@ for (int i = 1; i <= n; i++)
     double xi = a + i * h - h / 2;
     sum += Function(xi);
 }
-double integral = h / sum;
+double integral = h * sum;
 
 Console.WriteLine($"\nИнтеграл равен: {integral}");
 
